@@ -460,3 +460,13 @@ class PortStatus:
     tx_bad_packets: int | None = None
     rx_good_packets: int | None = None
     rx_bad_packets: int | None = None
+
+@dataclass
+class BlackList:
+    conn_type: Connection
+    deviceType: str
+    host: str
+    ipaddr: IPv4Address
+    key: str
+    mac: EUI48
+    name: str
